@@ -1,0 +1,31 @@
+@api = http://localhost:3000
+
+### GET VIDEOS
+GET http://localhost:3000/videos
+
+###
+GET http://localhost:3000/videos/6334879a5ee7d80764ef0c51
+
+### CREATE a Video
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=3dSkc-DIM74",
+    "title": "Nodejs MySQL REST API, Desde cero a Despliegue",
+    "description": "Aprende a crear una REST API de Nodejs y MySQL desde cero, iniciando un proyecto de Nodejs, conectandolo a MySQL, creando consultas SQL y finalmente desplegandolo gratuitamente en la nube, usando un servicio llamado Railway. En este tutorial crearemos la tipica REST API CRUD de MySQL usando desde Cero, y usando conceptos modernos de Nodejs como ES Modules, async/await, y modulos de npm."
+}
+
+
+###
+DELETE  {{api}}/videos/633493f9693c7db132a00ddf
+
+###
+PUT  {{api}}/videos/6334949a277fe818b6fc3727
+Content-Type: application/json
+
+{
+    
+    "title": "Nodejs MySQL REST API, De init a Deploy"
+    
+}

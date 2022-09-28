@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
-console.log(process.env.HELLO);
+console.log('leendo el config.ts');
 
 export default {
     MONGO_DATABASE: process.env.MONGO_DATABASE || 'videosdb',
