@@ -7,7 +7,7 @@ import videoRoutes from './routes/videos.routes';
  
 const app= express()
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 4000);
 console.log('seteamos puerto ' + process.env.PORT);
 
 app.use(morgan('dev'));
