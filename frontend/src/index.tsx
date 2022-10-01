@@ -25,13 +25,15 @@ root.render(
       <div className="container p-4">
         <Routes>
           <Route path='/' element={<VideoList />} />
-          <Route path='/new-video' element={<VideoForm />} />
+          <Route path='/new-video' element={<VideoForm/>}/>
+          <Route path='/update/:id' element={<VideoForm/>}/>
         </Routes>
         <ToastContainer/>
       </div>
 
     </BrowserRouter>
   </React.StrictMode>
+  //,document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
